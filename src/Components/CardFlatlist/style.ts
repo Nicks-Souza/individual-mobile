@@ -38,6 +38,23 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     textAlign: 'center',
+    top: -125,
+  },
+
+  buttonLike: {
+    position: 'absolute',
+    top: 110,
+    right: 10,
+    backgroundColor: '#B05674',
+    paddingVertical: 5,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+
+  textButton: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#fff',
   },
 });
 
