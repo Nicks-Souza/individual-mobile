@@ -8,6 +8,20 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
+  digivice: {
+    zIndex: 1,
+    alignContent: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'none',
+    paddingVertical: 5,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    width: 100,
+    height: 100,
+  },
+
+
   logo: {
     position: 'absolute'
   }

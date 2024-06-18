@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
   card: {
     marginHorizontal: 10,
     marginBottom: 20,
-    width: '45%',
+    width: '40%',
   },
 
   imagemBeast: {
@@ -41,14 +41,16 @@ export const styles = StyleSheet.create({
     top: -125,
   },
 
-  buttonLike: {
+  imagem: {
     position: 'absolute',
-    top: 110,
-    right: 10,
-    backgroundColor: '#B05674',
+    top: 100,
+    right: 30,
+    backgroundColor: 'none',
     paddingVertical: 5,
     paddingHorizontal: 20,
     borderRadius: 5,
+    width: 40,
+    height: 40,
   },
 
   textButton: {
@@ -56,5 +58,24 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
     color: '#fff',
   },
+
+
+  imagemButtonLiked: {
+    position: 'absolute',
+    top: 90,
+    right: -40,
+    backgroundColor: 'none',
+    paddingVertical: 5,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    width: 60,
+    height: 60,
+  },
+  
+  imagemBeastSelected: {
+    borderColor: 'gold',
+    borderWidth: 4,
+  },
+
 });
 

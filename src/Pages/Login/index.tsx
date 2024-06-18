@@ -8,12 +8,12 @@ import { styles } from './style'
 
 export function Login() {
 
-  const [email, setEmail] = useState<string>();
+  const [user, setUser] = useState<string>();
   const [password, setPassword] = useState<string>();
   const navigator = useNavigation();
 
-  const handleEmail = (value: string) => {
-    setEmail(value);
+  const handleUser = (value: string) => {
+    setUser(value);
   }
 
   const handlePassword = (value: string) => {
@@ -29,9 +29,10 @@ export function Login() {
       <View style={styles.container}>
         <Image style={styles.logo} source={Banner} alt="Banner tela login"/>
 
+        <Image style={styles.digivice} source={require('../../Assets/digivice.png')} alt="Digivice"/>
         <TextInputComponent
-          placeholder='Digite seu email'
-          onChangeValue={handleEmail}
+          placeholder='Digite seu usuario'
+          onChangeValue={handleUser}
         />
 
         <TextInputComponent
