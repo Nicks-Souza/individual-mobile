@@ -6,6 +6,7 @@ type PropsApi = {
   id: string;
   name: string;
   images: string[];
+  level: string; 
 };
 
 interface PropsComponent {
@@ -34,6 +35,7 @@ export function CardFlatlist({ recebe }: PropsComponent) {
             alt="Foto Digimon"
           />
           <Text style={styles.name}>{recebe.name}</Text>
+          <Text style={styles.level}>{recebe.level}</Text>
           <Image
             style={styles.imagem}
             source={require('../../Assets/digivice.png')}

@@ -41,6 +41,14 @@ export const styles = StyleSheet.create({
     top: -125,
   },
 
+  level:{
+    color: '#000',
+    fontSize: 15,
+    fontWeight: '700',
+    textAlign: 'center',
+    top: -405,
+  },
+
   imagem: {
     position: 'absolute',
     top: 100,
