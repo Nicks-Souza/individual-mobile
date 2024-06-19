@@ -1,49 +1,50 @@
-import React, { useState } from 'react'
-import { Alert, Image, Keyboard, Text, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native'
-import { ButtonComponent } from '../../Components/ButtonComponent'
-import { TextInputComponent } from '../../Components/TextInput'
-import Banner from '../../Assets/digimon4.jpg'
-import { useNavigation } from '@react-navigation/native'
-import { styles } from './style'
+import React, { useState } from 'react';
+import { Image, Keyboard, TouchableWithoutFeedback, View } from 'react-native';
+import { ButtonComponent } from '../../Components/ButtonComponent';
+import { TextInputComponent } from '../../Components/TextInput';
+import Banner from '../../Assets/digimon4.jpg';
+import { useNavigation } from '@react-navigation/native';
+import { styles } from './style';
 
 export function Login() {
-
-  const [user, setUser] = useState<string>();
-  const [password, setPassword] = useState<string>();
+  const [user, setUser] = useState<string>(''); // Estado para armazenar o nome de usuário
+  const [password, setPassword] = useState<string>('');
   const navigator = useNavigation();
 
   const handleUser = (value: string) => {
     setUser(value);
-  }
+  };
 
   const handlePassword = (value: string) => {
-    setPassword(value)
-  }
+    setPassword(value);
+  };
 
   const handleLogin = () => {
-      navigator.navigate("StackHome", {name: "Home"});
-  }
+    // Aqui você pode realizar a lógica de autenticação, por exemplo, verificar se o usuário e senha são válidos
+    // Simulando um login bem-sucedido para demonstração
+    setUser('Nome do usuário'); // Definindo o nome de usuário
+    navigator.navigate('StackHome', { name: 'Home' });
+  };
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.container}>
-        <Image style={styles.logo} source={Banner} alt="Banner tela login"/>
+        <Image style={styles.logo} source={Banner} alt="Banner tela login" />
 
-        <Image style={styles.digivice} source={require('../../Assets/digivice.png')} alt="Digivice"/>
+        <Image style={styles.digivice} source={require('../../Assets/logo.png')} alt="logo" />
         <TextInputComponent
-          placeholder='Digite seu usuario'
+          placeholder="Digite seu usuário"
           onChangeValue={handleUser}
         />
 
         <TextInputComponent
           onChangeValue={handlePassword}
-          placeholder='Digite sua senha'
+          placeholder="Digite sua senha"
           type={true}
         />
 
-        <ButtonComponent title="Entrar" handleOnChange={handleLogin}/>
+        <ButtonComponent title="Entrar" handleOnChange={handleLogin} />
       </View>
     </TouchableWithoutFeedback>
-  )
+  );
 }
-

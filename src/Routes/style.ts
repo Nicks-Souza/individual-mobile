@@ -11,5 +11,10 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     color: "#fff"
-  }
+  },
+
+  logo: {
+    width: 50,
+    height: 50,
+  },
 })
