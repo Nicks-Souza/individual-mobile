@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 import { styles } from './style';
 
 export function Login() {
-  const [user, setUser] = useState<string>(''); // Estado para armazenar o nome de usuário
+  const [user, setUser] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const navigator = useNavigation();
 
@@ -20,9 +20,7 @@ export function Login() {
   };
 
   const handleLogin = () => {
-    // Aqui você pode realizar a lógica de autenticação, por exemplo, verificar se o usuário e senha são válidos
-    // Simulando um login bem-sucedido para demonstração
-    setUser('Nome do usuário'); // Definindo o nome de usuário
+    setUser('Nome do usuário');
     navigator.navigate('StackHome', { name: 'Home' });
   };
 
