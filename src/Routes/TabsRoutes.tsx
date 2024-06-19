@@ -65,7 +65,7 @@ export function TabsRoutes() {
           tabBarIcon: ({ focused }) => (
             <View style={styles.boxNavigation}>
               <Icon name="person" size={focused ? 25 : 20} color={focused ? "#FFC0CB" : "#fff"} />
-              <Text style={styles.nameRoute}>Profile</Text>
+              <Text style={styles.nameRoute}>Perfil</Text>
             </View>
           ),
           headerTitle: () => (
@@ -90,13 +90,13 @@ export function TabsRoutes() {
           tabBarIcon: ({ focused }) => (
             <View style={styles.boxNavigation}>
               <Icon name="heart" size={focused ? 25 : 20} color={focused ? "#FFC0CB" : "#fff"} />
-              <Text style={styles.nameRoute}>Favorites</Text>
+              <Text style={styles.nameRoute}>Favoritos</Text>
             </View>
           ),
           headerTitle: () => (
             <View style={{ alignItems: 'center' }}>
               <Image source={logo} style={{ width: 200, height: 80 }} resizeMode="contain" />
-              <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Favoritos</Text>
+              <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Seus Favoritos</Text>
             </View>
           ),
           headerTitleStyle: {
